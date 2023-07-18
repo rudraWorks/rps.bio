@@ -7,12 +7,15 @@ function Home() {
     <Container>
       <PageHeading> 🏠 Home</PageHeading>
       <p style={{fontSize:'25px'}}>
-      Exploring web development, creating cool stuffs with Python and programming is one of the most exciting things I've done. It feels like the perfect blend of fields to really understand how computers work and how they can be manipulated to create something truly magical.
+      Hello! I'm Rudra, a highly motivated and enthusiastic computer science student on a mission to unravel the mysteries of technology. From a young age, I've been captivated by the immense power and potential of computers to reshape our world.
       <br/><br/>
-      I am currently studying my final year of Bachelor of Information Technology at Madan Mohan Malaviya University of Technology. In my spare time, I try to learn web technology related stuffs like nodejs, reactjs, express etc. I love to make real world projects that can help people in their daily lives. I run a blog where I post Data Structure and Algorithms related things. I also love to make simulations of algorithms.
+      Driven by my curiosity and a love for problem-solving, I find great joy in deciphering complex algorithms, crafting elegant code, and developing innovative software solutions. Through my studies, I've gained a solid foundation in key computer science principles such as data structures, algorithms, operating systems, DBMS and fullstack dev.
       <br/><br/>
-      Luckily, I enjoy it all! I find it particularly intriguing how it all ties together and that only makes me more motivated to dive deeper. I believe I am capable enough to provide value to organizations in software/IT field.
+      But computer science is not just about theoretical knowledge. It's about putting ideas into action. That's why I actively seek opportunities to apply my skills and expand my horizons.
+      <br/><br/>
+      What truly excites me is the potential of technology to make a positive impact on society. I envision a future where technological innovations improve lives, enhance industries, and contribute to sustainable development. I believe that through creativity, collaboration, and a deep understanding of computer science, we can shape this future together. 
       </p>
+
     </Container>
   )
 }

@@ -31,22 +31,15 @@ const Content = styled.div`
       width:${props => props.shownavpanel ? "0" : "100%"};
     }
 `
-const CloseButton = styled.button`
+const CloseButton = styled.div`
     display:none;
     position:relative; 
     left:49%;
     transform:translateX(-50%);
-    border-radius:10px;
-    height:30px;
-    width:30px;
-    border:none;
     margin:5px;
     @media only screen and (max-width: 600px) {
       display:block;
     } 
-    background:tan;
-    color:white;
-    font-weight:bolder;
 `
 const ShowNavPanelButton = styled.div`
     display:none;
@@ -64,7 +57,7 @@ function Root() {
     <Container>
 
       <NavPanel shownavpanel={+showNavPanel}>
-        <CloseButton onClick={() => setShowNavPanel(false)}>X</CloseButton>
+        <CloseButton onClick={() => setShowNavPanel(false)}>❌</CloseButton>
         <img src='/assets/logo3.png' style={{ width: '200px', marginTop: '35px', marginBottom: '35px' }} />
         <Links setShowNavPanel={setShowNavPanel} />
       </NavPanel>

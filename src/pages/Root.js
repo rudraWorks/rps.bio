@@ -33,6 +33,7 @@ const Content = styled.div`
 `
 const CloseButton = styled.div`
     display:none;
+    cursor:pointer;
     position:relative; 
     left:49%;
     transform:translateX(-50%);
@@ -44,7 +45,8 @@ const CloseButton = styled.div`
 const ShowNavPanelButton = styled.div`
     display:none;
     position:fixed;
-    right:15px;
+    right:25px;
+    top:10px;
     @media only screen and (max-width: 600px) {
       display:block;
     }
@@ -64,7 +66,7 @@ function Root() {
 
       <Content shownavpanel={+showNavPanel}>
         <ShowNavPanelButton > 
-          <img onClick={() => setShowNavPanel(true)} src='/assets/index.png' style={{height:'40px',cursor:'pointer'}}/>
+          <img onClick={() => setShowNavPanel(true)} src='/assets/index.png' style={{height:'30px',cursor:'pointer'}}/>
         </ShowNavPanelButton>
         <Outlet />
       </Content>

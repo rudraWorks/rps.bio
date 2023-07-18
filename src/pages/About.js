@@ -14,7 +14,7 @@ function About() {
         <p><b>Full Name:</b> Rudra Pratap Singh</p>
         <p><b>Nationality:</b> Indian</p>
         <p><b>Email:</b> merudra.official@gmail.com</p>
-        <p><b>Phone:</b> +91 7309250579</p>
+        <p><b>Phone:</b> +91 7309250579</p> 
         <br/>
 
 

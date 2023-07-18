@@ -9,15 +9,15 @@ const Container = styled.div`
     margin-top:5px;
 `
 const Box = styled.div`
-    background:gray;
-    color:white;
+    background:aliceblue;
+    color:black;
     border-radius:5px;
     padding:5px;
     margin-right:10px;
     margin-top:5px;
     min-width:80px;   
     text-align:center;
-    border:1px solid black;
+    border:1px solid #d5dadf;
 `
 function Skills({array}) {
   return (

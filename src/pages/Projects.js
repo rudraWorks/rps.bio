@@ -7,11 +7,9 @@ import ProjectsContainer from '../components/Projects'
 function Projects() { 
   return ( 
     <Container>
-      <PageHeading>Projects</PageHeading>
+      <PageHeading>🚀 Projects</PageHeading>
       <Card>
         <h2>Nodejs Apps</h2>
-        <hr/>
-        <br/>
         <ProjectsContainer array={
           [
             {
@@ -51,8 +49,6 @@ function Projects() {
 
       <Card>
         <h2>Reactjs Apps</h2>
-        <hr/>
-        <br/>
         <ProjectsContainer array={
           [
             {
@@ -73,8 +69,6 @@ function Projects() {
 
       <Card>
         <h2>Android Apps</h2>
-        <hr/>
-        <br/>
         <ProjectsContainer array={
           [
             {

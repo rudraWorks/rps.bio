@@ -5,8 +5,8 @@ import { NavLink } from 'react-router-dom'
 const Link = styled(NavLink)`
   width:90%;
   height:30px;
-  background:${props => props.primary ? "blue" : "lightgreen"};
-  border:1px solid #87a387;
+  background:#e5eff7;
+  border:1px solid #c2cad1;
   border-radius:5px;
   margin:5px;
   text-align:center;
@@ -14,11 +14,13 @@ const Link = styled(NavLink)`
   color:black;
   text-decoration:none; 
   &:hover{
-      background:#7ed57e;
+      background:#c9d2d9;
   }
   display:flex;
   align-items:center;
   justify-content:center;
+  font-size:25px;
+  padding:15px;
 `
 
 const Container = styled.div`
@@ -30,9 +32,9 @@ const Container = styled.div`
 `
 
 const ACTIVE_LINK = {
-  background:'gray',
+  background:'#7a9bb3',
   color:'white',
-  border:'1px solid black'
+  border:'1px solid #c2cad1'
 }
 
 function Links({setShowNavPanel}) { 
@@ -53,6 +55,10 @@ function Links({setShowNavPanel}) {
 
             <Link to='blogs' style={({ isActive }) => (isActive ? ACTIVE_LINK : {})} onClick={()=>setShowNavPanel(false)}>
                 Blogs
+            </Link> 
+
+            <Link to='links' style={({ isActive }) => (isActive ? ACTIVE_LINK : {})} onClick={()=>setShowNavPanel(false)}>
+                Links
             </Link> 
 
         </Container>

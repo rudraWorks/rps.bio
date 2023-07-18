@@ -24,3 +24,6 @@ code {
 button{
   cursor: pointer;
 }
+*{
+  font-family: 'Pangolin', cursive;
+}

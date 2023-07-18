@@ -10,12 +10,12 @@ const Container = styled.div`
     display:flex; 
 `
 const NavPanel = styled.div`
-    background:#ffde59;
+    background:aliceblue;
     display:flex;
     flex-direction:column;
     align-items:center;
-    border-right:1px solid #9a9adf;
-    width:350px;
+    border-right:1px solid #d1d1eb;
+    width:300px;
     @media only screen and (max-width: 600px) {
       display:${props => props.shownavpanel ? "flex" : "none"};
       width:${props => props.shownavpanel ? "100%" : "0"};
@@ -23,7 +23,6 @@ const NavPanel = styled.div`
 
 `
 const Content = styled.div`
-    background:aliceblue;
     width:100%;
     overflow-y:scroll;
     height:100vh;
@@ -34,10 +33,10 @@ const Content = styled.div`
 `
 const CloseButton = styled.button`
     display:none;
-    position:relative;
+    position:relative; 
     left:49%;
     transform:translateX(-50%);
-    border-radius:50%;
+    border-radius:10px;
     height:30px;
     width:30px;
     border:none;
@@ -45,17 +44,18 @@ const CloseButton = styled.button`
     @media only screen and (max-width: 600px) {
       display:block;
     } 
+    background:tan;
+    color:white;
+    font-weight:bolder;
 `
-const ShowNavPanelButton = styled.button`
+const ShowNavPanelButton = styled.div`
     display:none;
-    width:100%;
-    border:none;
-    height:30px;
-    border-bottom:1px dotted gray;
+    position:fixed;
+    right:15px;
     @media only screen and (max-width: 600px) {
       display:block;
     }
-
+    padding-top:5px;
 `
 
 function Root() {
@@ -65,12 +65,14 @@ function Root() {
 
       <NavPanel shownavpanel={+showNavPanel}>
         <CloseButton onClick={() => setShowNavPanel(false)}>X</CloseButton>
-        <img style={{ width: '150px', margin: '5px', borderRadius:'5px' }} src='/assets/me3.png' />
-        <Links setShowNavPanel={setShowNavPanel}  />
+        <img src='/assets/logo3.png' style={{ width: '200px', marginTop: '35px', marginBottom: '35px' }} />
+        <Links setShowNavPanel={setShowNavPanel} />
       </NavPanel>
 
       <Content shownavpanel={+showNavPanel}>
-        <ShowNavPanelButton onClick={() => setShowNavPanel(true)}>NAVBAR</ShowNavPanelButton>
+        <ShowNavPanelButton > 
+          <img onClick={() => setShowNavPanel(true)} src='/assets/index.png' style={{height:'40px',cursor:'pointer'}}/>
+        </ShowNavPanelButton>
         <Outlet />
       </Content>
     </Container>

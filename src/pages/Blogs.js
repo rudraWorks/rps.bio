@@ -11,6 +11,7 @@ const BlogDiv = styled.div`
       justify-content:center;
     }
     margin-bottom:20px;
+    justify-content: space-around;
 `
 
 const Article = styled.div`

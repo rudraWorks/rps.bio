@@ -6,6 +6,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Blogs from './pages/Blogs';
 import Links from './pages/Links';
+import Certifications from './pages/Certifications';
 
 const router =  createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router =  createBrowserRouter([
       {
         path:'links',
         element:<Links/>
+      },
+      {
+        path:'certificates',
+        element:<Certifications/>
       }
     ] 
   }

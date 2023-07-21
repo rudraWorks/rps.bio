@@ -53,6 +53,7 @@ function Links({setShowNavPanel}) {
                 Projects
             </Link>
 
+
             <Link to='blogs' style={({ isActive }) => (isActive ? ACTIVE_LINK : {})} onClick={()=>setShowNavPanel(false)}>
                 Blogs
             </Link> 
@@ -60,6 +61,12 @@ function Links({setShowNavPanel}) {
             <Link to='links' style={({ isActive }) => (isActive ? ACTIVE_LINK : {})} onClick={()=>setShowNavPanel(false)}>
                 Links
             </Link> 
+
+            
+            <Link to='certificates' style={({ isActive }) => (isActive ? ACTIVE_LINK : {})} onClick={()=>setShowNavPanel(false)}>
+                Certificates
+            </Link> 
+
 
         </Container>
     )

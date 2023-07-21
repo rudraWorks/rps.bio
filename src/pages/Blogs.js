@@ -54,7 +54,7 @@ function Blogs() {
 
         {showLoader && <h3>Loading...</h3>}
 
-        {articles.map(item => <a href={item.url} target='_blank' style={{ textDecoration: "none" }} ><Article key={item.social_image}>
+        {articles.map(item => <a  key={item.id} href={item.url} target='_blank' style={{ textDecoration: "none" }} ><Article>
           <img style={{ width: "250px", borderRadius: "5px" }} src={item.social_image}></img>
           <br></br>
           <div style={{ display: "flex", alignItems: "center" }}>

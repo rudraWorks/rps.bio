@@ -62,7 +62,6 @@ function Root() {
         <CloseButton onClick={() => setShowNavPanel(false)}>❌</CloseButton>
         <img src='/assets/logo3.png' style={{ width: '200px', marginTop: '35px', marginBottom: '35px' }} />
         <Links setShowNavPanel={setShowNavPanel} />
-        <span style={{marginTop:'auto',marginBottom:'10px'}}>Last updated: 21/07/24</span>
       </NavPanel>
 
       <Content shownavpanel={+showNavPanel}>

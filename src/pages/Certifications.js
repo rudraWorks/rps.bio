@@ -14,6 +14,7 @@ function Certifications() {
                 <Img src='/assets/certs/nodeudemy.jpg' />
                 <Img src='/assets/certs/dsaudemy.jpg' />
                 <Img src='/assets/certs/react.jpg' />
+                <Img src='/assets/certs/sql.jpg' />
             </center>
 
 

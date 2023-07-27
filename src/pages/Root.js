@@ -15,7 +15,8 @@ const NavPanel = styled.div`
     flex-direction:column;
     align-items:center;
     border-right:1px solid #d1d1eb;
-    width:300px;
+    width:330px;
+    padding:5px;
     @media only screen and (max-width: 600px) {
       display:${props => props.shownavpanel ? "flex" : "none"};
       width:${props => props.shownavpanel ? "100%" : "0"};
@@ -51,6 +52,7 @@ const ShowNavPanelButton = styled.div`
       display:block;
     }
     padding-top:5px;
+    z-index:100; 
 `
 
 function Root() {

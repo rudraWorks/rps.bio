@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Container = styled.div`
     padding:20px;
-    padding-top:10px;
+    padding-top:0px;
     text-align:justify;
     font-size:20px;
 `

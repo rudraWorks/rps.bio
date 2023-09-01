@@ -10,7 +10,6 @@ function About() {
       <PageHeading>📃 About</PageHeading>
       <Card>
         <h2>Quick Intro</h2>
-        <img style={{ width: '100px', borderRadius: '4px' }} src='/assets/m3bg.png' />
         <p><b>Full Name:</b> Rudra Pratap Singh</p>
         <p><b>Nationality:</b> Indian</p>
         <p><b>Email:</b> merudra.official@gmail.com</p>

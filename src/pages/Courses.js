@@ -10,7 +10,6 @@ function Certifications() {
             <center>
                 <Img src='/assets/certs/algorithmic toolbox.jpg' />
                 <Img src='/assets/certs/nptelalgo.jpg' />
-
                 <Img src='/assets/certs/nodeudemy.jpg' />
                 <Img src='/assets/certs/dsaudemy.jpg' />
                 <Img src='/assets/certs/react.jpg' />

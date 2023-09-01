@@ -6,14 +6,12 @@ function Home() {
   return (
     <Container>
       <PageHeading> 🏠 Home</PageHeading>
-      <p style={{fontSize:'25px'}}>
-      Hello! I'm Rudra, a highly motivated and enthusiastic computer science student on a mission to unravel the mysteries of technology. From a young age, I've been captivated by the immense power and potential of computers to reshape our world.
-      <br/><br/>
-      Driven by my curiosity and a love for problem-solving, I find great joy in deciphering complex algorithms, crafting elegant code, and developing innovative software solutions. Through my studies, I've gained a solid foundation in key computer science principles such as data structures, algorithms, operating systems, DBMS and fullstack dev.
-      <br/><br/>
-      But computer science is not just about theoretical knowledge. It's about putting ideas into action. That's why I actively seek opportunities to apply my skills and expand my horizons.
-      <br/><br/>
-      What truly excites me is the potential of technology to make a positive impact on society. I envision a future where technological innovations improve lives, enhance industries, and contribute to sustainable development. I believe that through creativity, collaboration, and a deep understanding of computer science, we can shape this future together. 
+      <p style={{ fontSize: '25px' }}>
+      <img style={{ width: '130px'}} src='/assets/m3bg.png' />
+    <br/>
+        My name is Rudra, and I am a passionate web developer with a focus on creating accessible, enjoyable, and feature-rich web applications. I believe in the power of small, consistent improvements to drive progress and success. Whether working with established technologies or exploring the cutting-edge, I am always eager to learn and innovate.
+        <br />
+        One of the things that sets me apart as a developer is my focus on accessibility. I believe that all web applications should be designed to be inclusive and usable by everyone, regardless of their abilities or disabilities. To achieve this goal, I follow industry best practices and strive to stay up-to-date with the latest accessibility standards and guidelines to ensure that my work is always compliant.
       </p>
 
     </Container>
@@ -21,3 +19,6 @@ function Home() {
 }
 
 export default Home
+
+
+// util,stream tls net http2 url assert https http fs

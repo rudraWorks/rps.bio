@@ -17,7 +17,8 @@ const Box = styled.div`
     margin-top:5px;
     min-width:80px;   
     text-align:center;
-    border:1px solid #d5dadf;
+    border:1px solid skyblue;
+    cursor:default;
 `
 function Skills({array}) {
   return (

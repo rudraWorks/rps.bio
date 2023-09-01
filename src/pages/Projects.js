@@ -3,6 +3,7 @@ import Container from '../components/ContentContainer'
 import PageHeading from '../components/PageHeading'
 import Card from '../components/Card'
 import ProjectsContainer from '../components/Projects'
+import { beSocial, bookMazter, liveType } from '../utils/projectDescription'
 
 function Projects() { 
   return ( 
@@ -14,15 +15,18 @@ function Projects() {
           [
             {
               img:'https://rudrapratap.netlify.app/assests/bSocialLogo.PNG',
-              name:'BeSocial'
+              name:'BeSocial',
+              projectDescription:beSocial
             },
             {
               img:'https://rudrapratap.netlify.app/assests/liveType.PNG',
-              name:'LiveType'
+              name:'LiveType',
+              projectDescription:liveType
             },
             {
               img:'https://static.vecteezy.com/system/resources/thumbnails/010/259/436/small/library-3d-illustration-png.png',
-              name:'BookMazter'
+              name:'BookMazter',
+              projectDescription:bookMazter
             },
             {
               img:'https://i.pinimg.com/564x/ef/98/63/ef9863650633fbe085d98943a9547022.jpg',

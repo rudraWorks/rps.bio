@@ -1,10 +1,10 @@
-import React from 'react'
+import React,{useState} from 'react'
 import styled from 'styled-components'
+import Modal from '../portals/Modal'
 
 const Container = styled.div`
     display:flex;
     flex-wrap:wrap;
-    // background:gray;
     width:100%;
     margin-top:5px;
     @media only screen and (max-width: 600px) {
@@ -16,28 +16,35 @@ const Box = styled.div`
   color: black;
   border-radius: 5px;
   padding: 5px;
-  margin-right: 10px;
-  margin-top: 5px;
+  margin:10px;
   min-width: 80px;
   text-align: center;
   border: 1px solid #dfdbdb;
   display: flex;
   flex-direction: column;
-
-
+  align-items:center;
+  cursor:pointer;
+  &:hover{
+    background:#c9d2d9;
+  }
 `
 export default function Projects({ array }) {
+
+  const [showModal,setShowModal] = useState(false)
+  const [content,setContent] = useState(null)
+
   return (
-    <Container>
-      {
+    <Container>   
+      <Modal showModal={showModal}  closeModal={()=>setShowModal(false)} content={content} />
+      {   
         array.map((item) =>
-          <Box key={item}>
-            <img style={{ width: '120px', height: '120px' }} src={item.img} />
-            <div>{item.name}</div>
+          <Box key={item.name} onClick={()=>{setShowModal(true);setContent(item.projectDescription)}}> 
+            <img style={{ width: '150px', height: '150px',marginBottom:'5px' }} src={item.img} />
+            {item.name}
           </Box>
         )
       }
     </Container>
   )
-}
+} 
 

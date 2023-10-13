@@ -9,6 +9,7 @@ const BlogDiv = styled.div`
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
+
 `
 
 const Article = styled.div`
@@ -19,8 +20,8 @@ const Article = styled.div`
     cursor:pointer;
     display:flex;
     flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    // justify-content:center;
+    // align-items:center;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     margin:20px;
@@ -29,13 +30,16 @@ const Article = styled.div`
     }
     @media only screen and (max-width: 600px) {
     }
+    height:130px;
+    background:aliceblue;
+    max-width:300px;
 `
 const Img = styled.img`
 width:250px;
  max-width:95%;
 `
 
-function Blogs() {
+function Articles() {
   // https://dev.to/api/articles?username=merudra754
   const [articles, setArticles] = useState([])
   const [showLoader, setShowLoader] = useState(true)
@@ -58,7 +62,7 @@ function Blogs() {
 
   return (
     <Container>
-      <PageHeading>✒️ Blogs</PageHeading>
+      <PageHeading>✒️ Articles</PageHeading>
       <div style={{ width: '100%', display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
         {
           showLoader &&
@@ -75,9 +79,12 @@ function Blogs() {
 
               <Article>
 
-                <Img src={item.social_image}></Img>
+                {/* <Img src={item.social_image}></Img> */}
+                <div style={{marginTop:'20px'}}>
+                  <h3>{item.title}</h3>
+                </div>
 
-                <div style={{ display: "flex" , justifyContent:'flex-start',width:'100%',paddingLeft:'5px',paddingRight:'5px'}}>
+                <div style={{ display: "flex" , justifyContent:'flex-start',width:'100%',paddingLeft:'5px',paddingRight:'5px',marginTop:'auto'}}>
 
                   <span>
                     🧡 {item.public_reactions_count} &nbsp;
@@ -97,7 +104,7 @@ function Blogs() {
           )}
       </BlogDiv>
     </Container>
-  )
+  ) 
 }
 
-export default Blogs
+export default Articles

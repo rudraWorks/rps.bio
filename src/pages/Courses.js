@@ -6,7 +6,7 @@ import styled from 'styled-components'
 function Certifications() {
     return (
         <Container>
-            <PageHeading> 🎖️ Certificates</PageHeading>
+            <PageHeading> 🎖️ Courses</PageHeading>
             <center>
                 <Img src='/assets/certs/algorithmic toolbox.jpg' />
                 <Img src='/assets/certs/nptelalgo.jpg' />

@@ -54,7 +54,7 @@ function Links({setShowNavPanel}) {
             </Link>
 
 
-            <Link to='blogs' style={({ isActive }) => (isActive ? ACTIVE_LINK : {})} onClick={()=>setShowNavPanel(false)}>
+            <Link to='articles' style={({ isActive }) => (isActive ? ACTIVE_LINK : {})} onClick={()=>setShowNavPanel(false)}>
                 Blogs
             </Link> 
 

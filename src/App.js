@@ -4,7 +4,7 @@ import Root from './pages/Root';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
-import Blogs from './pages/Blogs';
+import Articles from './pages/Articles';
 import Links from './pages/Links';
 import Courses from './pages/Courses';
 import Notes from './pages/Notes';
@@ -27,8 +27,8 @@ const router =  createBrowserRouter([
         element:<Projects/>
       },
       { 
-        path:'blogs',
-        element:<Blogs/>
+        path:'articles',
+        element:<Articles/>
       },
       {
         path:'links',
@@ -41,6 +41,10 @@ const router =  createBrowserRouter([
       {
         path:'notes',
         element:<Notes/>
+      },
+      {
+        path:'*',
+        element:<h2 style={{textAlign:'center',marginTop:'40px'}}>Four-o-Four :(</h2>
       }
     ] 
   }
